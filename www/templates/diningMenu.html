@@ -1,0 +1,23 @@
+<ion-view view-title="{{active.name | uppercase}} - {{ location | uppercase }}">
+  <ion-content>
+    <div class="tabs tabs-dark menu-tabs">
+      <a href="#" class="tab-item" ng-click="makeBreakfast()">
+        Breakfast
+      </a>
+      <a href="#" class="tab-item" ng-click="makeLunch()">
+        Lunch
+      </a>
+      <a href="#" class="tab-item" ng-click="makeDinner()">
+        Dinner
+      </a>
+    </div>
+    <div ng-repeat="mealSection in active.data" style="margin: 20px 0;">
+      <h1 style="text-align: center;">{{ mealSection.name }}</h1>
+      <ion-list>
+        <ion-item ng-repeat="dish in mealSection.dishes">
+          {{ dish }}
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-content>
+</ion-view>

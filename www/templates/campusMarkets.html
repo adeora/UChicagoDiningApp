@@ -1,0 +1,24 @@
+<ion-view view-title="Campus Markets and Cafes">
+  <ion-content>
+    <div class="list">
+      <div class="item item-divider">Campus Markets</div>
+      <a class="item" href="#" ng-repeat="market in markets" ng-click="openModal('markets', $index)">{{ market.name }}</a>
+      <div class="item item-divider">Campus Cafes</div>
+      <a class="item" href="#" ng-repeat="cafe in cafes" ng-click="openModal('cafes', $index)">{{ cafe.name }}</a>
+    </div>
+  </ion-content>
+</ion-view>
+
+<script id="my-modal.html" type="text/ng-template">
+  <ion-modal-view>
+    <ion-header-bar>
+      <h1 class="title">{{currentModalData.name}}</h1>
+      <a href="#" ng-click="closeModal()">x</a>
+    </ion-header-bar>
+    <ion-content>
+      <h1>{{currentModalData.name}}</h1>
+      <p>Hours of Operation: {{currentModalData.hours}}</p>
+      <p>Address: {{currentModalData.address}}</p>
+    </ion-content>
+  </ion-modal-view>
+</script>

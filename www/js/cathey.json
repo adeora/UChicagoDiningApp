@@ -1,0 +1,235 @@
+{
+  "breakfast": [
+    {
+      "name": "Desserts",
+      "dishes": [
+        "Blueberry Muffin",
+        "Moist Apple Crumb Cake"
+      ]
+    },
+    {
+      "name": "Harvest",
+      "dishes": [
+        "Blueberry Buttermilk Pancakes",
+        "Eggs",
+        "Grits",
+        "Hard-Cooked Egg",
+        "O&apos;Brien Potatoes",
+        "Old Fashioned Oatmeal",
+        "Turkey Bacon",
+        "Turkey Sausage Patty"
+      ]
+    },
+    {
+      "name": "Salad",
+      "dishes": [
+        "Cantaloupe",
+        "Cottage Cheese",
+        "Fruit Cocktail",
+        "Greek Yogurt Spread",
+        "Honey Granola",
+        "Honeydew Melon",
+        "Raisins",
+        "Strawberry Yogurt"
+      ]
+    }
+  ],
+  "lunch": [
+    {
+      "name": "Deli",
+      "dishes": [
+        "American Cheese",
+        "Cheddar Cheese",
+        "Ham",
+        "Marble Rye Bread",
+        "Provolone Cheese",
+        "Salami",
+        "Swiss Cheese",
+        "Turkey Breast",
+        "White Bread",
+        "Whole Wheat Bread"
+      ]
+    },
+    {
+      "name": "Desserts",
+      "dishes": [
+        "Chocolate Chip Cookie",
+        "Oatmeal Raisin Cookie",
+        "Sugar Cookie"
+      ]
+    },
+    {
+      "name": "Dining room attendant",
+      "dishes": [
+        "Citrus Water",
+        "Iced Tea"
+      ]
+    },
+    {
+      "name": "Euro",
+      "dishes": [
+        "Baked Macaroni &amp; Cheese",
+        "Fresh Collard Greens",
+        "Honey Mesquite BBQ Pork Loin",
+        "Southwest Fajitas"
+      ]
+    },
+    {
+      "name": "Grill",
+      "dishes": [
+        "Baked Crinkle-Cut French Fries",
+        "Chili Cheddar Dog",
+        "Dill Pickle Slices",
+        "Grilled Montreal Chicken",
+        "Lettuce",
+        "Made-To-Order, Beef Patty, Angus, 3.2 Ozw",
+        "Sliced Onions",
+        "Sliced Plum Tomatoes"
+      ]
+    },
+    {
+      "name": "Harvest",
+      "dishes": [
+        "Baked Sweet Potato",
+        "Brown Rice",
+        "Charro Beans",
+        "Seasoned Black Beans",
+        "Vegetable Fajita"
+      ]
+    },
+    {
+      "name": "Pizza",
+      "dishes": [
+        "Classic Cheese Pizza",
+        "Pepperoni Pizza"
+      ]
+    },
+    {
+      "name": "Salad",
+      "dishes": [
+        "Baby Spinach",
+        "Black Beans",
+        "Blue Cheese Dressing",
+        "Broccoli Florets",
+        "Citrus Vinaigrette",
+        "Cucumbers",
+        "Dijon Ranch Dressing",
+        "Fresh Tomato Wedges",
+        "Granola",
+        "Raisins",
+        "Romaine Lettuce",
+        "Shredded Carrots",
+        "Shredded Cheddar Cheese",
+        "Sliced Beets",
+        "Sliced Celery",
+        "Sliced Green Bell Peppers",
+        "Thousand Island Dressing"
+      ]
+    },
+    {
+      "name": "Soup",
+      "dishes": [
+        "Chicken Noodle Soup",
+        "Mushroom Barley Soup"
+      ]
+    }
+  ],
+  "dinner": [
+    {
+      "name": "Deli",
+      "dishes": [
+        "Cheddar Cheese",
+        "Ham",
+        "Marble Rye Bread",
+        "Swiss Cheese",
+        "Turkey Breast",
+        "White Bread",
+        "Whole Wheat Bread"
+      ]
+    },
+    {
+      "name": "Desserts",
+      "dishes": [
+        "Chocolate Chip Cookie",
+        "Chocolate Crinkle Whoopie Pie",
+        "COOKIE (FZ DOUGH): CARNIVAL 1.0 OZ - DO NOT USE"
+      ]
+    },
+    {
+      "name": "Dining room attendant",
+      "dishes": [
+        "Citrus Water",
+        "Iced Tea"
+      ]
+    },
+    {
+      "name": "Euro",
+      "dishes": [
+        "Baked Tilapia",
+        "BBQ Grilled Turkey",
+        "Creamy Mashed Potatoes",
+        "Glazed Carrots"
+      ]
+    },
+    {
+      "name": "Grill",
+      "dishes": [
+        "American Cheese",
+        "Dill Pickle Slices",
+        "Green Leaf Lettuce",
+        "Grilled Chicken Breast",
+        "Hamburger",
+        "Hearty Steak Fries",
+        "Roast Beef &amp; Provolone Panini",
+        "Sliced Onions",
+        "Sliced Tomatoes"
+      ]
+    },
+    {
+      "name": "Harvest",
+      "dishes": [
+        "Baked Sweet Potato",
+        "Brown Rice",
+        "Charro Beans",
+        "Tempura Tofu"
+      ]
+    },
+    {
+      "name": "Pizza",
+      "dishes": [
+        "Classic Cheese Pizza",
+        "Grilled Vegetable Mini Calzone",
+        "Pepperoni Pizza"
+      ]
+    },
+    {
+      "name": "Salad",
+      "dishes": [
+        "Baby Spinach",
+        "Black Beans",
+        "Blue Cheese Dressing",
+        "Broccoli Florets",
+        "Citrus Vinaigrette",
+        "Cucumbers",
+        "Dijon Ranch Dressing",
+        "Fresh Tomato Wedges",
+        "Granola",
+        "Raisins",
+        "Romaine Lettuce",
+        "Shredded Carrots",
+        "Shredded Cheddar Cheese",
+        "Sliced Beets",
+        "Sliced Celery",
+        "Sliced Green Bell Peppers",
+        "Thousand Island Dressing"
+      ]
+    },
+    {
+      "name": "Soup",
+      "dishes": [
+        "Chicken Noodle Soup",
+        "Mushroom Barley Soup"
+      ]
+    }
+  ]
+}

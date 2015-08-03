@@ -1,0 +1,26 @@
+/* Empty. Add your own CSS if you like */
+
+html {
+  background: red !important;
+}
+
+h1 { font-family: 'ProximaNovaT-Thin', 'Helvetia', 'Arial', sans-serif !important; }
+h2 { font-family: 'ProximaNova-Light', 'Helvetia', 'Arial', sans-serif !important; }
+h3 { font-family: 'ProximaNova-Regular', 'Helvetia', 'Arial', sans-serif !important; }
+h4 { font-family: 'ProximaNova-Semibold', 'Helvetia', 'Arial', sans-serif !important; }
+h5 { font-family: 'ProximaNova-Bold', 'Helvetia', 'Arial', sans-serif !important; }
+
+.menu-tabs {
+  position: static !important;
+  top: 0;
+}
+
+.bar-uchicago-maroon {
+  background-color: #800000 !important;
+  color: #fff !important;
+}
+
+.bar-uchicago-maroon .title,
+.bar-uchicago-maroon .button {
+  color: inherit !important;
+}
