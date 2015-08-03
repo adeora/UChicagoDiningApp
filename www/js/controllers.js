@@ -87,6 +87,66 @@ angular.module('starter.controllers', [])
       'address' : '1010 E. 59th St.',
       'hours'   : 'M-Fr 8am - 3pm'
     },
+    {
+      'name'    : 'Einstein Brothers Bagels',
+      'address' : '5706 S. University Ave.',
+      'hours'   : 'M-Fr 7am - 11pm, Sa-Su 9am - 11pm'
+    },
+    {
+      'name'    : 'Gordon Cafe',
+      'address' : '927 E. 57th St.',
+      'hours'   : 'M-Fr 8am - 3pm'
+    },
+    {
+      'name'    : 'Harris Cafe',
+      'address' : '1155 E. 60th St.',
+      'hours'   : 'M-Fr 8am - 3pm & 4-7pm'
+    },
+    {
+      'name'    : 'Hutchinson Commons',
+      'address' : '5706 S. University Ave.',
+      'hours'   : 'M-Th 11am - 8pm, Fr 11am - 3pm, Sa 11:30am - 7pm'
+    },
+    {
+      'name'    : 'Law School Cafe',
+      'address' : '1111 E. 60th St.',
+      'hours'   : 'M-Th 8am - 5pm, Fr 8am - 3:30pm'
+    },
+    {
+      'name'    : 'Cafe Logan',
+      'address' : '915 E. 60th St.',
+      'hours'   : 'M-Fr 8am - 8pm, Sa-Su 12pm-8pm'
+    },
+    {
+      'name'    : 'Press Cafe',
+      'address' : '1427 E. 60th St.',
+      'hours'   : 'M-Fr 8am - 3pm'
+    },
+    {
+      'name'    : 'SSA Cafe',
+      'address' : '969 E. 60th St.',
+      'hours'   : 'M-Th 8am - 3pm'
+    },
+    {
+      'name'    : 'Stuart Cafe',
+      'address' : '5835 S. Greenwood Ave.',
+      'hours'   : 'M-Fr 8am - 3pm'
+    },
+    {
+      'name'    : 'Tiffin Cafe',
+      'address' : '1414 E. 59th St.',
+      'hours'   : 'M-Su 4pm-12am'
+    },
+    {
+      'name'    : 'Starbucks at Saieh Hall',
+      'address' : '5757 S. University Ave.',
+      'hours'   : 'M-Fr 7am - 6pm'
+    },
+    {
+      'name'    : 'Barnes & Noble Bookstore Cafe',
+      'address' : '970 E 58th st.',
+      'hours'   : 'M-Fr 7am - 6pm, Sa 9am-4pm'
+    },
   ];
 
   $scope.currentModalData = null;
