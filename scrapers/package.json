@@ -1,0 +1,13 @@
+{
+  "name"         : "uchicago-dining-app",
+  "version"      : "0.0.1",
+  "description"  : "uchicago dining application",
+  "main"         : "server.js",
+  "author"       : "Abhimanyu Deora",
+  "dependencies" : {
+    "express"    : "latest",
+    "request"    : "latest",
+    "cheerio"    : "latest",
+    "moment"     : "latest"
+  }
+}
