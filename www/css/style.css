@@ -24,3 +24,7 @@ h5 { font-family: 'ProximaNova-Bold', 'Helvetia', 'Arial', sans-serif !important
 .bar-uchicago-maroon .button {
   color: inherit !important;
 }
+
+.scroll {
+  height: 100% !important;
+}
