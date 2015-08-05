@@ -4,11 +4,15 @@ html {
   background: #800000 !important;
 }
 
-h1 { font-family: 'ProximaNovaT-Thin', 'Helvetia', 'Arial', sans-serif !important; }
-h2 { font-family: 'ProximaNova-Light', 'Helvetia', 'Arial', sans-serif !important; }
-h3 { font-family: 'ProximaNova-Regular', 'Helvetia', 'Arial', sans-serif !important; }
-h4 { font-family: 'ProximaNova-Semibold', 'Helvetia', 'Arial', sans-serif !important; }
-h5 { font-family: 'ProximaNova-Bold', 'Helvetia', 'Arial', sans-serif !important; }
+* {
+  font-family: 'ProximaNova-Regular', 'Helvetica', 'Arial', sans-serif !important;
+}
+
+h1 { font-family: 'ProximaNovaT-Thin', 'Helvetica', 'Arial', sans-serif !important; }
+h2 { font-family: 'ProximaNova-Light', 'Helvetica', 'Arial', sans-serif !important; }
+h3 { font-family: 'ProximaNova-Regular', 'Helvetica', 'Arial', sans-serif !important; }
+h4 { font-family: 'ProximaNova-Semibold', 'Helvetica', 'Arial', sans-serif !important; }
+h5 { font-family: 'ProximaNova-Bold', 'Helvetica', 'Arial', sans-serif !important; }
 
 .menu-tabs {
   position: static !important;
@@ -27,4 +31,18 @@ h5 { font-family: 'ProximaNova-Bold', 'Helvetia', 'Arial', sans-serif !important
 
 .scroll {
   height: 100% !important;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+a.modal-close {
+  display: block;
+  float: right;
+  padding: 10px;
+  font-size: 200%;
+  color: #000;
+  text-decoration: none;
 }

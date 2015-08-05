@@ -3,21 +3,21 @@
     {
       "name": "Desserts",
       "dishes": [
-        "Blueberry Muffin",
-        "Moist Apple Crumb Cake"
+        "Cinnamon-Sugar Donut",
+        "Corn Muffin"
       ]
     },
     {
       "name": "Harvest",
       "dishes": [
-        "Blueberry Buttermilk Pancakes",
+        "Bacon",
+        "Buttermilk Pancakes",
         "Eggs",
         "Grits",
         "Hard-Cooked Egg",
-        "O&apos;Brien Potatoes",
+        "Lyonnaise Potatoes",
         "Old Fashioned Oatmeal",
-        "Turkey Bacon",
-        "Turkey Sausage Patty"
+        "Turkey Bacon"
       ]
     },
     {
@@ -43,7 +43,7 @@
         "Ham",
         "Marble Rye Bread",
         "Provolone Cheese",
-        "Salami",
+        "Roast Beef",
         "Swiss Cheese",
         "Turkey Breast",
         "White Bread",
@@ -54,8 +54,7 @@
       "name": "Desserts",
       "dishes": [
         "Chocolate Chip Cookie",
-        "Oatmeal Raisin Cookie",
-        "Sugar Cookie"
+        "COOKIE (FZ DOUGH): CARNIVAL 1.0 OZ - DO NOT USE"
       ]
     },
     {
@@ -68,17 +67,17 @@
     {
       "name": "Euro",
       "dishes": [
-        "Baked Macaroni &amp; Cheese",
-        "Fresh Collard Greens",
-        "Honey Mesquite BBQ Pork Loin",
-        "Southwest Fajitas"
+        "Baked Chipotle-Orange Chicken",
+        "Hearty Macaroni Bake",
+        "Roasted Sweet Potatoes",
+        "Yellow Summer Squash"
       ]
     },
     {
       "name": "Grill",
       "dishes": [
-        "Baked Crinkle-Cut French Fries",
-        "Chili Cheddar Dog",
+        "Chicken Quesadilla",
+        "Crispy Shoestring French Fries",
         "Dill Pickle Slices",
         "Grilled Montreal Chicken",
         "Lettuce",
@@ -92,9 +91,8 @@
       "dishes": [
         "Baked Sweet Potato",
         "Brown Rice",
-        "Charro Beans",
-        "Seasoned Black Beans",
-        "Vegetable Fajita"
+        "Red Kidney Beans",
+        "Vegan Chicken &amp; Kale Penne"
       ]
     },
     {
@@ -129,8 +127,8 @@
     {
       "name": "Soup",
       "dishes": [
-        "Chicken Noodle Soup",
-        "Mushroom Barley Soup"
+        "Barley Vegetable Soup",
+        "Chicken Noodle Soup"
       ]
     }
   ],
@@ -151,8 +149,8 @@
       "name": "Desserts",
       "dishes": [
         "Chocolate Chip Cookie",
-        "Chocolate Crinkle Whoopie Pie",
-        "COOKIE (FZ DOUGH): CARNIVAL 1.0 OZ - DO NOT USE"
+        "Raspberry-Lemon Whoopie Pie",
+        "Sugar Cookie"
       ]
     },
     {
@@ -165,22 +163,22 @@
     {
       "name": "Euro",
       "dishes": [
-        "Baked Tilapia",
-        "BBQ Grilled Turkey",
-        "Creamy Mashed Potatoes",
-        "Glazed Carrots"
+        "Chipotle BBQ Chicken",
+        "Crispy Zucchini",
+        "Meat Lasagna",
+        "Roasted Garlic Potatoes"
       ]
     },
     {
       "name": "Grill",
       "dishes": [
         "American Cheese",
+        "Crispy Waffle Fries",
         "Dill Pickle Slices",
         "Green Leaf Lettuce",
         "Grilled Chicken Breast",
+        "Grilled Reuben",
         "Hamburger",
-        "Hearty Steak Fries",
-        "Roast Beef &amp; Provolone Panini",
         "Sliced Onions",
         "Sliced Tomatoes"
       ]
@@ -190,15 +188,15 @@
       "dishes": [
         "Baked Sweet Potato",
         "Brown Rice",
-        "Charro Beans",
-        "Tempura Tofu"
+        "Garbanzo Beans",
+        "Vegetarian Beef Enchilada"
       ]
     },
     {
       "name": "Pizza",
       "dishes": [
+        "Broccoli &amp; Red Pepper Pizza",
         "Classic Cheese Pizza",
-        "Grilled Vegetable Mini Calzone",
         "Pepperoni Pizza"
       ]
     },
@@ -227,8 +225,8 @@
     {
       "name": "Soup",
       "dishes": [
-        "Chicken Noodle Soup",
-        "Mushroom Barley Soup"
+        "Barley Vegetable Soup",
+        "Chicken Noodle Soup"
       ]
     }
   ]

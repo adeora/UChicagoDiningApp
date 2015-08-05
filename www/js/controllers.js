@@ -1,3 +1,135 @@
+var markets = [{
+  'name': 'Maroon Market',
+  'address': '5640 S. University Ave., Chicago, IL',
+  'hours': 'M-Su 10am - 3am',
+  'coords': {
+    'lat': 41.791817,
+    'long': -87.598456
+  }
+}, {
+  'name': 'Midway Market',
+  'address': '6031 S. Ellis Ave., Chicago, IL',
+  'hours': 'M-Su 10am- 3am',
+  'coords': {
+    'lat': 41.785025,
+    'long': -87.600349
+  }
+}];
+
+var cafes = [{
+  'name': 'Bio Cafe',
+  'address': '924 East 57th St., Chicago, IL',
+  'hours': 'M-Fr 8am - 3pm',
+  'coords': {
+    'lat': 41.791760,
+    'long': -87.602787
+  }
+}, {
+  'name': 'Classics Cafe',
+  'address': '1010 E. 59th St., Chicago, IL',
+  'hours': 'M-Fr 8am - 3pm',
+  'coords': {
+    'lat': 41.787911,
+    'long': -87.600828
+  }
+}, {
+  'name': 'Einstein Brothers Bagels',
+  'address': '5706 S. University Ave., Chicago, IL',
+  'hours': 'M-Fr 7am - 11pm, Sa-Su 9am - 11pm',
+  'coords': {
+    'lat': 41.790914,
+    'long': -87.598263
+  }
+}, {
+  'name': 'Gordon Cafe',
+  'address': '927 E. 57th St., Chicago, IL',
+  'hours': 'M-Fr 8am - 3pm',
+  'coords': {
+    'lat': 41.791102,
+    'long': -87.602719
+  }
+}, {
+  'name': 'Harris Cafe',
+  'address': '1155 E. 60th St., Chicago, IL',
+  'hours': 'M-Fr 8am - 3pm & 4-7pm',
+  'coords': {
+    'lat': 41.785644,
+    'long': -87.597098
+  }
+}, {
+  'name': 'Hutchinson Commons',
+  'address': '5706 S. University Ave., Chicago, IL',
+  'hours': 'M-Th 11am - 8pm, Fr 11am - 3pm, Sa 11:30am - 7pm',
+  'coords': {
+    'lat': 41.790914,
+    'long': -87.598263
+  }
+}, {
+  'name': 'Law School Cafe',
+  'address': '1111 E. 60th St., Chicago, IL',
+  'hours': 'M-Th 8am - 5pm, Fr 8am - 3:30pm',
+  'coords': {
+    'lat': 41.785060,
+    'long': -87.599001
+  }
+}, {
+  'name': 'Cafe Logan',
+  'address': '915 E. 60th St., Chicago, IL',
+  'hours': 'M-Fr 8am - 8pm, Sa-Su 12pm-8pm',
+  'coords': {
+    'lat': 41.785450,
+    'long': -87.603927
+  }
+}, {
+  'name': 'Press Cafe',
+  'address': '1427 E. 60th St., Chicago, IL',
+  'hours': 'M-Fr 8am - 3pm',
+  'coords': {
+    'lat': 41.785783,
+    'long': -87.590542
+  }
+}, {
+  'name': 'SSA Cafe',
+  'address': '969 E. 60th St., Chicago, IL',
+  'hours': 'M-Th 8am - 3pm',
+  'coords': {
+    'lat': 41.785580,
+    'long': -87.601735
+  }
+}, {
+  'name': 'Stuart Cafe',
+  'address': '5835 S. Greenwood Ave., Chicago, IL',
+  'hours': 'M-Fr 8am - 3pm',
+  'coords': {
+    'lat': 41.788401,
+    'long': -87.599099
+  }
+}, {
+  'name': 'Tiffin Cafe',
+  'address': '1414 E. 59th St., Chicago, IL',
+  'hours': 'M-Su 4pm-12am',
+  'coords': {
+    'lat': 41.788077,
+    'long': -87.590951
+  }
+}, {
+  'name': 'Starbucks at Saieh Hall',
+  'address': '5757 S. University Ave., Chicago, IL',
+  'hours': 'M-Fr 7am - 6pm',
+  'coords': {
+    'lat': 41.789978,
+    'long': -87.598015
+  }
+}, {
+  'name': 'Barnes & Noble Bookstore Cafe',
+  'address': '970 E 58th st., Chicago, IL',
+  'hours': 'M-Fr 7am - 6pm, Sa 9am-4pm',
+  'coords': {
+    'lat': 41.789560,
+    'long': -87.602033
+  }
+}];
+
 angular.module('starter.controllers', [])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
@@ -78,72 +210,8 @@ angular.module('starter.controllers', [])
 
 .controller('CampusMarketsCtrl', function($scope, $ionicModal) {
 
-  $scope.markets = [{
-    'name': 'Maroon Market',
-    'address': '5640 S. University Ave., Chicago, IL',
-    'hours': 'M-Su 10am - 3am',
-  }, {
-    'name': 'Midway Market',
-    'address': '6031 S. Ellis Ave., Chicago, IL',
-    'hours': 'M-Su 10am- 3am'
-  }];
-  $scope.cafes = [{
-    'name': 'Bio Cafe',
-    'address': '924 East 57th St., Chicago, IL',
-    'hours': 'M-Fr 8am - 3pm'
-  }, {
-    'name': 'Classics Cafe',
-    'address': '1010 E. 59th St., Chicago, IL',
-    'hours': 'M-Fr 8am - 3pm'
-  }, {
-    'name': 'Einstein Brothers Bagels',
-    'address': '5706 S. University Ave., Chicago, IL',
-    'hours': 'M-Fr 7am - 11pm, Sa-Su 9am - 11pm'
-  }, {
-    'name': 'Gordon Cafe',
-    'address': '927 E. 57th St., Chicago, IL',
-    'hours': 'M-Fr 8am - 3pm'
-  }, {
-    'name': 'Harris Cafe',
-    'address': '1155 E. 60th St., Chicago, IL',
-    'hours': 'M-Fr 8am - 3pm & 4-7pm'
-  }, {
-    'name': 'Hutchinson Commons',
-    'address': '5706 S. University Ave., Chicago, IL',
-    'hours': 'M-Th 11am - 8pm, Fr 11am - 3pm, Sa 11:30am - 7pm'
-  }, {
-    'name': 'Law School Cafe',
-    'address': '1111 E. 60th St., Chicago, IL',
-    'hours': 'M-Th 8am - 5pm, Fr 8am - 3:30pm'
-  }, {
-    'name': 'Cafe Logan',
-    'address': '915 E. 60th St., Chicago, IL',
-    'hours': 'M-Fr 8am - 8pm, Sa-Su 12pm-8pm'
-  }, {
-    'name': 'Press Cafe',
-    'address': '1427 E. 60th St., Chicago, IL',
-    'hours': 'M-Fr 8am - 3pm'
-  }, {
-    'name': 'SSA Cafe',
-    'address': '969 E. 60th St., Chicago, IL',
-    'hours': 'M-Th 8am - 3pm'
-  }, {
-    'name': 'Stuart Cafe',
-    'address': '5835 S. Greenwood Ave., Chicago, IL',
-    'hours': 'M-Fr 8am - 3pm'
-  }, {
-    'name': 'Tiffin Cafe',
-    'address': '1414 E. 59th St., Chicago, IL',
-    'hours': 'M-Su 4pm-12am'
-  }, {
-    'name': 'Starbucks at Saieh Hall',
-    'address': '5757 S. University Ave., Chicago, IL',
-    'hours': 'M-Fr 7am - 6pm'
-  }, {
-    'name': 'Barnes & Noble Bookstore Cafe',
-    'address': '970 E 58th st., Chicago, IL',
-    'hours': 'M-Fr 7am - 6pm, Sa 9am-4pm'
-  }, ];
+  $scope.markets = markets;
+  $scope.cafes = cafes;
 
   $scope.currentModalData = null;
 
@@ -181,135 +249,7 @@ angular.module('starter.controllers', [])
 
 .controller('MapCtrl', function($scope, $http) {
 
-  $scope.places = [{
-    'name': 'Maroon Market',
-    'address': '5640 S. University Ave., Chicago, IL',
-    'hours': 'M-Su 10am - 3am',
-    'coords': {
-      'lat': 41.791817,
-      'long': -87.598456
-    }
-  }, {
-    'name': 'Midway Market',
-    'address': '6031 S. Ellis Ave., Chicago, IL',
-    'hours': 'M-Su 10am- 3am',
-    'coords': {
-      'lat': 41.785025,
-      'long': -87.600349
-    }
-  }, {
-    'name': 'Bio Cafe',
-    'address': '924 East 57th St., Chicago, IL',
-    'hours': 'M-Fr 8am - 3pm',
-    'coords': {
-      'lat': 41.791760,
-      'long': -87.602787
-    }
-  }, {
-    'name': 'Classics Cafe',
-    'address': '1010 E. 59th St., Chicago, IL',
-    'hours': 'M-Fr 8am - 3pm',
-    'coords': {
-      'lat': 41.787911,
-      'long': -87.600828
-    }
-  }, {
-    'name': 'Einstein Brothers Bagels',
-    'address': '5706 S. University Ave., Chicago, IL',
-    'hours': 'M-Fr 7am - 11pm, Sa-Su 9am - 11pm',
-    'coords': {
-      'lat': 41.790914,
-      'long': -87.598263
-    }
-  }, {
-    'name': 'Gordon Cafe',
-    'address': '927 E. 57th St., Chicago, IL',
-    'hours': 'M-Fr 8am - 3pm',
-    'coords': {
-      'lat': 41.791102,
-      'long': -87.602719
-    }
-  }, {
-    'name': 'Harris Cafe',
-    'address': '1155 E. 60th St., Chicago, IL',
-    'hours': 'M-Fr 8am - 3pm & 4-7pm',
-    'coords': {
-      'lat': 41.785644,
-      'long': -87.597098
-    }
-  }, {
-    'name': 'Hutchinson Commons',
-    'address': '5706 S. University Ave., Chicago, IL',
-    'hours': 'M-Th 11am - 8pm, Fr 11am - 3pm, Sa 11:30am - 7pm',
-    'coords': {
-      'lat': 41.790914,
-      'long': -87.598263
-    }
-  }, {
-    'name': 'Law School Cafe',
-    'address': '1111 E. 60th St., Chicago, IL',
-    'hours': 'M-Th 8am - 5pm, Fr 8am - 3:30pm',
-    'coords': {
-      'lat': 41.785060,
-      'long': -87.599001
-    }
-  }, {
-    'name': 'Cafe Logan',
-    'address': '915 E. 60th St., Chicago, IL',
-    'hours': 'M-Fr 8am - 8pm, Sa-Su 12pm-8pm',
-    'coords': {
-      'lat': 41.785450,
-      'long': -87.603927
-    }
-  }, {
-    'name': 'Press Cafe',
-    'address': '1427 E. 60th St., Chicago, IL',
-    'hours': 'M-Fr 8am - 3pm',
-    'coords': {
-      'lat': 41.785783,
-      'long': -87.590542
-    }
-  }, {
-    'name': 'SSA Cafe',
-    'address': '969 E. 60th St., Chicago, IL',
-    'hours': 'M-Th 8am - 3pm',
-    'coords': {
-      'lat': 41.785580,
-      'long': -87.601735
-    }
-  }, {
-    'name': 'Stuart Cafe',
-    'address': '5835 S. Greenwood Ave., Chicago, IL',
-    'hours': 'M-Fr 8am - 3pm',
-    'coords': {
-      'lat': 41.788401,
-      'long': -87.599099
-    }
-  }, {
-    'name': 'Tiffin Cafe',
-    'address': '1414 E. 59th St., Chicago, IL',
-    'hours': 'M-Su 4pm-12am',
-    'coords': {
-      'lat': 41.788077,
-      'long': -87.590951
-    }
-  }, {
-    'name': 'Starbucks at Saieh Hall',
-    'address': '5757 S. University Ave., Chicago, IL',
-    'hours': 'M-Fr 7am - 6pm',
-    'coords': {
-      'lat': 41.789978,
-      'long': -87.598015
-    }
-  }, {
-    'name': 'Barnes & Noble Bookstore Cafe',
-    'address': '970 E 58th st., Chicago, IL',
-    'hours': 'M-Fr 7am - 6pm, Sa 9am-4pm',
-    'coords': {
-      'lat': 41.789560,
-      'long': -87.602033
-    }
-  }, ];
+  $scope.places = cafes.concat(markets);
 
   function initMap(crds) {
     // create the map
@@ -360,7 +300,11 @@ angular.module('starter.controllers', [])
       markers.push(marker);
       google.maps.event.addListener(marker, 'mousedown', (function(marker, i) {
         return function() {
-          var contentString = $scope.places[i]['name'] + "<br/>" + $scope.places[i]['address'] + "<br/>" + $scope.places[i]['hours'];
+          var distance = calculateDistance($scope.places[i]['coords']['lat'], $scope.places[i]['coords']['long'], crds.latitude, crds.longitude).toFixed(3);
+          var contentString = "<strong>" + $scope.places[i]['name'] + "</strong><br/>";
+          contentString += $scope.places[i]['address'] + "<br/>";
+          contentString += $scope.places[i]['hours'] + "<br/>";
+          contentString += distance + " miles from you";
           infowindow.setContent(contentString);
           infowindow.open(map, marker);
         }
@@ -390,10 +334,27 @@ angular.module('starter.controllers', [])
   var geolocationOptions = {
     enableHighAccuracy: true,
     timeout: 5000,
-    maximumAge: 0
+  maximumAge: 0
   };
 
   navigator.geolocation.getCurrentPosition(success, error, geolocationOptions);
+
+  function calculateDistance(lat1, lon1, lat2, lon2, unit) {
+	  var radlat1 = Math.PI * lat1/180;
+	  var radlat2 = Math.PI * lat2/180;
+	  var radlon1 = Math.PI * lon1/180;
+	  var radlon2 = Math.PI * lon2/180;
+	  var theta = lon1-lon2;
+	  var radtheta = Math.PI * theta/180;
+	  var dist = Math.sin(radlat1) * Math.sin(radlat2) + Math.cos(radlat1) * Math.cos(radlat2) * Math.cos(radtheta);
+	  dist = Math.acos(dist);
+	  dist = dist * 180/Math.PI;
+	  dist = dist * 60 * 1.1515;
+	  if (unit=="K") { dist = dist * 1.609344; }
+	  if (unit=="N") { dist = dist * 0.8684; }
+	  return dist;
+  }
+
 })
 
 ;

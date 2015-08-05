@@ -12,12 +12,16 @@
 <script id="my-modal.html" type="text/ng-template">
   <ion-modal-view>
     <ion-header-bar>
-      <h1 class="title">{{currentModalData.name}}</h1>
-      <a href="#" ng-click="closeModal()">x</a>
+      <div class="container">
+        <a href="#" ng-click="closeModal()" class="modal-close">x</a>
+      </div>
     </ion-header-bar>
     <ion-content>
-      <h1>{{currentModalData.name}}</h1>
-      <p>Hours of Operation: {{currentModalData.hours}}</p>
-      <p>Address: {{currentModalData.address}}</p>    </ion-content>
+      <div class="container">
+        <h1>{{currentModalData.name}}</h1>
+        <p>Hours of Operation: {{currentModalData.hours}}</p>
+        <p>Address: {{currentModalData.address}}</p>
+      </div>
+    </ion-content>
   </ion-modal-view>
 </script>
