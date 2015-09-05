@@ -11,13 +11,22 @@
         Dinner
       </a>
     </div>
-    <div ng-repeat="mealSection in active.data" style="margin: 20px 0;">
-      <h1 style="text-align: center;">{{ mealSection.name }}</h1>
+
+    <div ng-repeat="(key, value) in active.data" style="margin: 20px 0;">
+      <h1 style="text-align: center;">{{ key }}</h1>
       <ion-list>
-        <ion-item ng-repeat="dish in mealSection.dishes">
-          {{ dish }}
+        <ion-item ng-repeat="dish in value">
+          {{ dish.name }}
+          <!--
+          there seem to be some issues with how the scraper gets veg and vegan
+            stuff - that needs to be fixed before the veg and vegan status of
+            each dish is displayed
+          {{dish.vegetarian | vegetarian}}
+          {{dish.vegan | vegan}}
+          -->
         </ion-item>
       </ion-list>
     </div>
+
   </ion-content>
 </ion-view>

@@ -130,7 +130,35 @@ var cafes = [{
   }
 }];
 
+(function (global) {
+    "use strict";
+
+    function onDeviceReady () {
+        document.addEventListener("online", onOnline, false);
+        document.addEventListener("resume", onResume, false);
+        loadMapsApi();
+    }
+
+    function onOnline () {
+        loadMapsApi();
+    }
+
+    function onResume () {
+        loadMapsApi();
+    }
+
+    function loadMapsApi () {
+        if(navigator.connection.type === Connection.NONE || google.maps) {
+            return;
+        }
+        $.getScript('https://maps.googleapis.com/maps/api/js?key=AIzaSyBdH7_rhIYwS4ml6SqbvPMtV6joV--ilbI&sensor=true');
+    }
+
+    document.addEventListener("deviceready", onDeviceReady, false);
+})(window);
+
 angular.module('starter.controllers', [])
+
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
 
@@ -173,6 +201,7 @@ angular.module('starter.controllers', [])
   };
 })
 
+/*
 .controller('DiningMenuCatheyCtrl', function($scope, $http) {
 
   $http.get('js/cathey.json').success(function(data) {
@@ -196,6 +225,73 @@ angular.module('starter.controllers', [])
       description: "Could not load json data"
     }];
   });
+  $scope.location = "Cathey";
+  $scope.makeBreakfast = function() {
+    $scope.active = $scope.breakfast;
+  };
+  $scope.makeLunch = function() {
+    $scope.active = $scope.lunch;
+  };
+  $scope.makeDinner = function() {
+    $scope.active = $scope.dinner;
+  };
+})
+*/
+
+.controller('DiningMenuCatheyCtrl', function($scope, $http) {
+
+
+  $http.get('http://abhimanyudeora.com:8081/allData').success(function(data) {
+
+    $scope.breakfast = {
+      name: 'breakfast',
+      data: {}
+    };
+
+    $scope.lunch = {
+      name: 'lunch',
+      data: {}
+    };
+
+    $scope.dinner = {
+      name: 'dinner',
+      data: {}
+    };
+
+    for(var i=0; i < data.length; i++) {
+      switch (data[i].sectionWhen) {
+        case 0: //breakfast
+          if( $scope.breakfast.data[data[i].sectionName] == undefined ) {
+            $scope.breakfast.data[data[i].sectionName] = [data[i]];
+          }
+          else {
+            $scope.breakfast.data[data[i].sectionName].push(data[i]);
+          }
+          break;
+        case 1: //lunch
+          $scope.lunch.data[data[i].sectionName] = data[i].name;
+          break;
+        case 2: //dinner
+          if( $scope.dinner.data[data[i].sectionName] == undefined ) {
+            $scope.dinner.data[data[i].sectionName] = [data[i]];
+          }
+          else {
+            $scope.dinner.data[data[i].sectionName].push(data[i]);
+          }
+          break;
+        default:
+          break;
+      }
+    }
+
+    $scope.active = $scope.breakfast;
+  }).error(function(data, status, error, config) {
+    $scope.contents = [{
+      heading: "Error",
+      description: "Could not load json data"
+    }];
+  });
+
   $scope.location = "Cathey";
   $scope.makeBreakfast = function() {
     $scope.active = $scope.breakfast;
@@ -354,6 +450,10 @@ angular.module('starter.controllers', [])
 	  if (unit=="N") { dist = dist * 0.8684; }
 	  return dist;
   }
+
+
+
+
 
 })
 

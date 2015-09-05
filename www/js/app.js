@@ -22,9 +22,28 @@ angular.module('starter', ['ionic','ionic.service.core', 'starter.controllers'])
   });
 })
 
+.filter('vegetarian', function() {
+  return function(input) {
+    var out = "";
+    if(input == '1') {
+      out = ", Vegetarian";
+    }
+    return out;
+  }
+})
+
+.filter('vegan', function() {
+  return function(input) {
+    var out = "";
+    if(input == '1') {
+      out = ", Vegan";
+    }
+    return out;
+  }
+})
+
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
-
   .state('app', {
     url: '/app',
     abstract: true,

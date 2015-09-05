@@ -7,7 +7,9 @@ node_modules/
 **/bower_components or sometimes it is lib/**
 platforms/
 plugins/
+resources/
 *.swp
 *.swo
 *.log
 *.DS_Store
+.gitignore

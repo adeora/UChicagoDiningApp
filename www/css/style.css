@@ -46,3 +46,7 @@ a.modal-close {
   color: #000;
   text-decoration: none;
 }
+
+.item-divider {
+  font-weight: bold;
+}
