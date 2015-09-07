@@ -26,7 +26,7 @@ angular.module('starter', ['ionic','ionic.service.core', 'starter.controllers'])
   return function(input) {
     var out = "";
     if(input == '1') {
-      out = ", Vegetarian";
+      out = " - Vegetarian";
     }
     return out;
   }
