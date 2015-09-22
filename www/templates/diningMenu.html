@@ -12,10 +12,10 @@
       </a>
     </div>
 
-    <div ng-repeat="(key, value) in active.data" style="margin: 20px 0;">
+    <div ng-repeat="(key, value) in active.data | orderBy : 'key'" style="margin: 20px 0;">
       <h1 style="text-align: center;">{{ key }}</h1>
       <ion-list>
-        <ion-item ng-repeat="dish in value">
+        <ion-item ng-repeat="dish in value | orderBy: 'name'">
           <strong>{{ dish.name }}</strong>{{dish.vegetarian | vegetarian}}{{dish.vegan | vegan}}
         </ion-item>
       </ion-list>

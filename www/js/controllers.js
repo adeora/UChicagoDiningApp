@@ -201,45 +201,7 @@ angular.module('starter.controllers', [])
   };
 })
 
-/*
 .controller('DiningMenuCatheyCtrl', function($scope, $http) {
-
-  $http.get('js/cathey.json').success(function(data) {
-    console.log('data is gotten');
-    $scope.breakfast = {
-      name: 'breakfast',
-      data: data['breakfast']
-    };
-    $scope.lunch = {
-      name: 'lunch',
-      data: data['lunch']
-    };
-    $scope.dinner = {
-      name: 'dinner',
-      data: data['dinner']
-    };
-    $scope.active = $scope.breakfast;
-  }).error(function(data, status, error, config) {
-    $scope.contents = [{
-      heading: "Error",
-      description: "Could not load json data"
-    }];
-  });
-  $scope.location = "Cathey";
-  $scope.makeBreakfast = function() {
-    $scope.active = $scope.breakfast;
-  };
-  $scope.makeLunch = function() {
-    $scope.active = $scope.lunch;
-  };
-  $scope.makeDinner = function() {
-    $scope.active = $scope.dinner;
-  };
-})
-*/
-
-.controller('DiningMenuCatheyCtrl', function($scope, $http) {
-
 
   $http.get('http://abhimanyudeora.com:8081/allData').success(function(data) {
 
@@ -252,6 +214,8 @@ angular.module('starter.controllers', [])
       name: 'lunch',
       data: {}
     };
+
+    console.log($scope.lunch);
 
     $scope.dinner = {
       name: 'dinner',
@@ -269,7 +233,13 @@ angular.module('starter.controllers', [])
           }
           break;
         case 1: //lunch
-          $scope.lunch.data[data[i].sectionName] = data[i].name;
+        if( $scope.lunch.data[data[i].sectionName] == undefined ) {
+          $scope.lunch.data[data[i].sectionName] = [data[i]];
+        }
+        else {
+          $scope.lunch.data[data[i].sectionName].push(data[i]);
+        }
+        break;
           break;
         case 2: //dinner
           if( $scope.dinner.data[data[i].sectionName] == undefined ) {
@@ -397,10 +367,12 @@ angular.module('starter.controllers', [])
       google.maps.event.addListener(marker, 'mousedown', (function(marker, i) {
         return function() {
           var distance = calculateDistance($scope.places[i]['coords']['lat'], $scope.places[i]['coords']['long'], crds.latitude, crds.longitude).toFixed(3);
+          var walkString = calculateWalkTime(distance);
           var contentString = "<strong>" + $scope.places[i]['name'] + "</strong><br/>";
           contentString += $scope.places[i]['address'] + "<br/>";
           contentString += $scope.places[i]['hours'] + "<br/>";
-          contentString += distance + " miles from you";
+          contentString += distance + " miles from you<br/>";
+          contentString += walkString;
           infowindow.setContent(contentString);
           infowindow.open(map, marker);
         }
@@ -415,12 +387,12 @@ angular.module('starter.controllers', [])
 
     console.log('Latitude is ' + latitude + '° Longitude is ' + longitude + '° with accuracy of ' + accuracy + " meters");
 
-    //initMap(position.coords);
-    initMap({
+    initMap(position.coords);
+    /*initMap({
       "latitude": 41.792000,
       "longitude": -87.598120,
       "accuracy": 15
-    });
+    });*/
   };
 
   function error() {
@@ -430,7 +402,7 @@ angular.module('starter.controllers', [])
   var geolocationOptions = {
     enableHighAccuracy: true,
     timeout: 5000,
-  maximumAge: 0
+    maximumAge: 0
   };
 
   navigator.geolocation.getCurrentPosition(success, error, geolocationOptions);
@@ -451,9 +423,19 @@ angular.module('starter.controllers', [])
 	  return dist;
   }
 
-
-
-
+  //TODO: make these walk times more accurate
+  //  maybe some trig will do this?
+  function calculateWalkTime(distance) {
+    // distance in miles
+    var walkSpeed = 0.05; // miles per minute
+    var walkTime = Math.round(distance/walkSpeed);
+    if( walkTime == 0 ) {
+      return "Less than a minute walk time.";
+    }
+    else {
+      return walkTime + "ish minute walk time.";
+    }
+  }
 
 })
 
